@@ -96,9 +96,9 @@ class CARTOMap extends Component {
     this.props.client.addLayers(Object.values(cartoLayers).map(item => item.layer));
 
     // Labels need to be added after the layers
-    L.tileLayer(BASEMAP_LABELS).addTo(this.props.map);
-    console.log(cartoLayers)
-    this.props.storeLayers(cartoLayers)
+    // L.tileLayer(BASEMAP_LABELS).addTo(this.props.map);
+    // console.log(cartoLayers)
+    // this.props.storeLayers(cartoLayers)
   }
 
   componentDidUpdate(prevProps) {

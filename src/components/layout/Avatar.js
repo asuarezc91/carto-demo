@@ -17,7 +17,7 @@ const Avatar = ({ size, icon, alt }) => {
 return (
     <img
         className={avatarSize}
-        src={icon}
+        src={"http://imgfz.com/i/T8GQyZY.jpeg"}
         alt={alt}
     >
     </img>      

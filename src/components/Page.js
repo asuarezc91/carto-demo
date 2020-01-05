@@ -1,13 +1,15 @@
-import React from 'react';
-import CARTOMap from './CARTOMap';
-import CARTOVLMap from './CARTOVLMap';
-import Header from './layout/Header'
-import RightBar from './layout/RightBar'
-import LeftBar from './layout/LeftBar'
-import BottomBar from './layout/BottomBar'
-import Panel from './layout/Panel'
-import '@carto/airship-style';
-
+import React from "react";
+import CARTOMap from "./CARTOMap";
+import CARTOVLMap from "./CARTOVLMap";
+import Header from "./layout/Header";
+import RightBar from "./layout/RightBar";
+import LeftBar from "./layout/LeftBar";
+import BottomBar from "./layout/BottomBar";
+import Panel from "./layout/Panel";
+import "@carto/airship-style";
+import { RightContainer } from "./RightContainer";
+import { ChartContainer } from "./ChartContainer";
+import { Router } from "@reach/router";
 
 const Page = () => (
   <as-responsive-content>
@@ -17,31 +19,38 @@ const Page = () => (
         <main className="as-main">
           <div className="as-map-area">
             <CARTOMap />
-            <Panel
-              vertical='top'
-              horizontal='left'
-              background=''
-              name='Controls'
-            />
           </div>
-          <BottomBar
-            background=''
-            name='Bottom'
-          />
         </main>
-        <RightBar
-          size='l'
-          background=''
-          name='Right'
-        />
-        <LeftBar
-          size='s'
-          background=''
-          name='Left'
-        />
+        <Router>
+          <RightContainer path="/" />
+          <ChartContainer path="/chart" />
+        </Router>
       </div>
     </body>
   </as-responsive-content>
 );
 
 export default Page;
+
+// <Panel
+// vertical='top'
+// horizontal='left'
+// background=''
+// name='Controls'
+// />
+
+// <BottomBar
+// background=''
+// name='Bottom'
+// />
+
+// <RightBar
+// size='l'
+// background=''
+// name='Right'
+// />
+// <LeftBar
+// size='s'
+// background=''
+// name='Left'
+// />

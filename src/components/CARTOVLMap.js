@@ -27,7 +27,7 @@ class CARTOVLMap extends Component {
 
     const map = new mapboxgl.Map({
         container: 'map',
-        style: carto.basemaps.voyager,
+        style: carto.basemaps.darkmatter,
         center: [CENTER[1], CENTER[0]],
         zoom: ZOOM,
         scrollZoom: false,
