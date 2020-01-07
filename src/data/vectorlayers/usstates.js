@@ -1,7 +1,7 @@
 export default {
     name: 'US States',
   
-    visible: true,
+    visible: false,
   
     style: `
         color: #666

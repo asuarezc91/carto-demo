@@ -4,8 +4,60 @@ import { MenuA } from "./styles";
 import { TextMenuA } from "./styles";
 import { ButtonMenuA } from "./styles";
 import { Link } from "./styles";
+import CARTOMap from "../CARTOMap";
+
+// import React, { Component } from "react";
+// import { render } from "react-dom";
+// import L from "leaflet";
+// import carto, { filter, source, style, layer } from "@carto/carto.js";
+// import { connect } from "react-redux";
+// import styled from "styled-components";
+// import {
+//   storeLayers,
+//   setMap,
+//   setBboxFilter,
+//   changeViewport,
+//   changeCartoBBox
+// } from "../actions/actions";
+// import InfoWindow from "../components/InfoWindow";
+// import layers from "../data/layers";
+// import C from "../data/C";
+// import "@carto/airship-style";
+// import $ from "jquery";
 
 export const ChartContainer = () => {
+  alert("chart");
+  // function deffinitionExpression() {
+  //   const cartoLayers = Object.keys(layers).reduce((all, layerName) => {
+  //     const { options, ...other } = layers[layerName];
+  //     const source = new carto.source.SQL(other.query);
+  //     source.setQuery("SELECT * FROM s_monica WHERE size  = 1650");
+  //     const style = new carto.style.CartoCSS(other.cartocss);
+  //     const layer = new carto.layer.Layer(source, style, options);
+
+  //     if (options.featureClickColumns) {
+  //       layer.on("featureClicked", this.openPopup.bind(this));
+  //     }
+
+  //     if (options.featureClickColumns && layerName === "stores") {
+  //       console.log(layerName);
+  //       layer.on("featureClicked", this.openPopupStores.bind(this));
+  //     }
+
+  //     this.props.client.getLeafletLayer().addTo(this.props.map);
+
+  //     if (other.visible === false) {
+  //       layer.hide();
+  //     }
+
+  //     return { ...all, [layerName]: { source, style, layer, ...other } };
+  //   }, {});
+
+  //   this.props.client.addLayers(
+  //     Object.values(cartoLayers).map(item => item.layer)
+  //   );
+  // }
+
   return (
     //Pondemos todo el router aqui sin falta aunque sean submenus
     <MainMenu>
@@ -30,7 +82,6 @@ export const ChartContainer = () => {
 // <TextMenuA>Menu B</TextMenuA>
 // <ButtonMenuA>ButtonMenuB</ButtonMenuA>
 // </MenuA>
-
 
 // import React from 'react';
 // import ShowcaseButton from '../showcase-components/showcase-button';

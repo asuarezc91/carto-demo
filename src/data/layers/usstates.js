@@ -1,5 +1,5 @@
 export default {
-  name: 'US States',
+  name: 's_monica',
 
   visible: true,
 
@@ -16,7 +16,7 @@ export default {
   `,
 
   query: `
-    SELECT * FROM us_states
+    SELECT * FROM s_monica
   `,
 
   options: {

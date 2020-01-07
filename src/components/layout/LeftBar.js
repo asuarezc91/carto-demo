@@ -48,10 +48,10 @@ return (
     back={true}
   />
   <Dropdown 
-    categoryLayer={layers.railaccidents.source}
-    column={'weather'}
+    categoryLayer={layers.usstates.source}
+    column={'city'}
     operation={operation.COUNT}
-    placeholder={'Weather'}
+    placeholder={'Ciudades'}
   />    
   <LinkButton
     name='CARTO Website'
@@ -89,8 +89,8 @@ return (
     currency={false}
     locale='en-US'
     currencyType='USD'
-    layer={layers.railaccidents.source}
-    column='rr_employees_injured'
+    layer={layers.usstates.source}
+    column='city'
     operation={operation.SUM}
   />
   </div>
@@ -98,9 +98,9 @@ return (
     title='Accident Description'
     description='Search text in the accident description field'
     id='search'
-    layer={layers.railaccidents.source}
+    layer={layers.usstates.source}
     placeholder='Search...'
-    column='narrative'
+    column='city'
   />
   <Input
     id='input'

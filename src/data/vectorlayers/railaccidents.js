@@ -1,7 +1,7 @@
 export default {
     name: 'Rail Accidents',
   
-    visible: true,
+    visible: false,
   
     style: `
         width: 8
