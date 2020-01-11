@@ -127,9 +127,9 @@ class CARTOMap extends Component {
       "https://asuarezc91.carto.com/api/v2/sql/?q=" + sql_statement,
       function(data) {
         const test = data.rows[0];
-        console.log(test);
+        // console.log(test);
         const prueba = test.cartodb_id;
-        console.log(prueba);
+        // console.log(prueba);
         $.each(data.rows, function(key, val) {});
       }
     );

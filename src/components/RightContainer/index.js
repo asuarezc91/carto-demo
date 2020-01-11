@@ -4,18 +4,26 @@ import { MenuA } from "./styles";
 import { TextMenuA } from "./styles";
 import { ButtonMenuA } from "./styles";
 import { Link } from "./styles";
+import { MdHome } from "react-icons/md";
+import { MdList } from "react-icons/md";
+import { white } from "ansi-colors";
+import { ContainerList } from "./styles";
+
+const COLOR = "white";
+const SIZE = "32px";
 
 export const RightContainer = () => {
   return (
     //Pondemos todo el router aqui sin falta aunque sean submenus
     <MainMenu>
       <MenuA>
-        <TextMenuA>Menu A</TextMenuA>
-        <Link to="/chart"></Link>
-      </MenuA>
-      <MenuA>
-        <TextMenuA>Menu B</TextMenuA>
-        <ButtonMenuA>ButtonMenuB</ButtonMenuA>
+        <MdHome size={SIZE} color={COLOR} />
+        <TextMenuA>Constructions</TextMenuA>
+        <ContainerList>
+          <Link to="/chart">
+            <MdList size={SIZE} />
+          </Link>
+        </ContainerList>
       </MenuA>
     </MainMenu>
   );
