@@ -53,7 +53,7 @@ export const ContainerMenu = styled.div`
   right: 0px;
   width: 400px;
   height: 100%;
-  background: blue;
+  background: #252831;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,7 +65,7 @@ export const Back = styled.div`
   right: 2px;
   height: 35px;
   width: 35px;
-  background-color: #252831;
+  background-color: #424858;
   display: flex;
   justify-content: center;
   border-radius: 3px;
@@ -89,28 +89,28 @@ export const TopMenu = styled.div`
   right: 0px;
   height: 120px;
   width: 400px;
-  background: #424858;
+  background: #252831;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: solid 0.1px #424858;
 `;
 
-
-
 export const SelectMenu = styled.select`
-  width: 80px;
-  height: 25px;
-  background: #262626;
+  width: 100px;
+  height: 30px;
+  background: #424858;
   color: white;
   padding-left: 5px;
   font-size: 14px;
   border: none;
+  border-radius: 4px;
   margin-left: 15px;
 
   option {
     color: white;
-    background: #262626;
+    background: #424858;
     display: flex;
     white-space: pre;
     min-height: 20px;
@@ -121,8 +121,10 @@ export const SelectMenu = styled.select`
 
 export const ButtonConsult = styled.button`
   margin-top: 10px;
-  background-color: #262626;
+  margin-bottom: 22px;
+  background-color: #424858;
   border: none;
+  border-radius: 4px; 
   color: white;
   text-align: center;
   text-decoration: none;
@@ -145,7 +147,7 @@ export const Scroll = styled.div`
   top: 120px;
   right: 0px;
   width: 400px;
-  background: #262626;
+  background: #252831;
   height: calc(100% - 120px);
   overflow: overlay;
 `;
@@ -153,19 +155,34 @@ export const Scroll = styled.div`
 export const HeaderCard = styled.div`
   right: 0px;
   width: 400px;
-  background: #404040;
+  background: #252831; 
+  color: white;
 `;
 
 export const BodyCard = styled.div`
   top: 52px;
   right: 0px;
   width: 400px;
-  background: #a3c9d9;
-  height: 120px;
+  background: #424858;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #C5C5C5;
 `;
 
 export const ContainerSelects = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+`;
+
+
+export const SpanData = styled.span`
+  margin-top: 6px;
+  margin-left: 4px;
+`;
+
+export const SpanTittle = styled.span`
+  margin-left: 4px;
 `;

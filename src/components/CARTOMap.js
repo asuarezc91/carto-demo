@@ -103,36 +103,6 @@ class CARTOMap extends Component {
     this.props.client.addLayers(
       Object.values(cartoLayers).map(item => item.layer)
     );
-
-    // Labels need to be added after the layers
-    // L.tileLayer(BASEMAP_LABELS).addTo(this.props.map);
-    // console.log(cartoLayers)
-    // this.props.storeLayers(cartoLayers)
-
-    // var sql = new cartodb.SQL({ user: "asuarez91" });
-    // sql
-    //   .execute("SELECT * FROM la_home WHERE id > ", { id: 3 })
-    //   .done(function(data) {
-    //     console.log(data.rows);
-    //   })
-    //   .error(function(errors) {
-    //     // errors contains a list of errors
-    //     console.log("errors:" + errors);
-    //   });
-
-    const sql_statement =
-      "SELECT * FROM s_monica WHERE city  = 'SANTA MONICA CA'";
-
-    https: $.getJSON(
-      "https://asuarezc91.carto.com/api/v2/sql/?q=" + sql_statement,
-      function(data) {
-        const test = data.rows[0];
-        // console.log(test);
-        const prueba = test.cartodb_id;
-        // console.log(prueba);
-        $.each(data.rows, function(key, val) {});
-      }
-    );
   }
 
   componentDidUpdate(prevProps) {

@@ -12,6 +12,7 @@ const HeaderToggle = () => {
       className="as-toolbar__item as-toolbar__toggle">
       <i className="as-icon-hamburguer as-title as-m--0"></i>
     </button>
+    
   );
 }
 

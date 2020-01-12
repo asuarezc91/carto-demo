@@ -15,6 +15,7 @@ const Page = () => (
   <as-responsive-content>
     <body className="as-app-body as-app">
       <Header />
+
       <div className="as-content">
         <main className="as-main">
           <div className="as-map-area">
@@ -32,27 +33,4 @@ const Page = () => (
 
 export default Page;
 
-// <Panel
-// vertical='top'
-// horizontal='left'
-// background=''
-// name='Controls'
-// />
-
-// <BottomBar
-// background=''
-// name='Bottom'
-// />
-
-// <RightBar
-// size='l'
-// background=''
-// name='Right'
-// />
-// <LeftBar
-// size='s'
-// background=''
-// name='Left'
-// />
-
-//Va debajo de main
+ 
